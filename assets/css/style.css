@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* variables create to better organise colouring of application */ 
+  :root {
+    --background: rgba(0,0,0, 0.7);
+    --light: #ffffff;
+    --highlight: #FF6200;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+    /* Header nav to display name/logo on right and page options on left */
+  header {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--light);
+    border-bottom: 5px solid var(--highlight);
+    }
+
+    header a:hover{
+    color: var(--highlight);
+    }
+
+    header h1:hover{
+    color: var(--highlight);
+    }
+
+    header h1 {
+    display: inline-block;
+    font-size: 48px;
+    }
+
+    header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    }
+
+    header nav ul {
+    list-style-type: none;
+    }
+
+    header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    }
+
+    a {
+    color: var(--light);
+    text-decoration: none;
+    }
+
+    /* Main image to be bigger than the rest */
+
+    .main-image {
+    height: 600px;
+    width: 100%;
+    background-image: url("/Users/Lois/Documents/coding_bootcamp/UK-VIRT-FE-PT-11-2022-U-LOLC/week-2/04-responsive-portfolio-lesson/challenge/images/Selfie.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--highlight);
+    padding: 10px;
+    }
+    height: 100%; /*I am aware this code is currently broken, but this being here makes the positioning of slogan work. I know this needs to be revised */
+
+    /* slogan to be positioned lower right of the image*/
+    .slogan {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    color: var(--light);
+    position: absolute;
+    bottom: 2px;
+    left: 16px;
+    }
+
+    #Slogan {
+    color: var(--light);
+    background: var(--background);;
+    }
+
+    /* About me section to match styling of the rest of the page */
+
+    .about-me {
+    padding: 10px;
+    background-color: var(--background);;
+    border-bottom: 5px solid var(--highlight);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    /* work section including the newly learn flex, I am not happy with how this looks at the moment and will be revised but it is interative when hovering and following styling of the rest of the page */
+    .page-section {
+    padding: 10px;
+    background-color: var(--background);;
+    border-bottom: 5px solid var(--highlight);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    }
+
+    .column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+    .project1, .project2, .project3, .project4, .project5 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .project1 {
+    margin-top: 20px;
+    background-image: url(/Users/Lois/Documents/coding_bootcamp/Portfolio/assets/images/Portfolio1.jpeg);
+    border-bottom: 5px solid var(--highlight);
+    }
+
+    .project2 {
+    background-image: url(/Users/Lois/Documents/coding_bootcamp/Portfolio/assets/images/Portfolio2.jpeg);
+    border-bottom: 5px solid var(--highlight);
+    }
+
+    .project3 {
+    background-image: url(/Users/Lois/Documents/coding_bootcamp/Portfolio/assets/images/Portfolio3.png);
+    border-bottom: 5px solid var(--highlight);
+    }
+
+    .project4 {
+    background-image: url(/Users/Lois/Documents/coding_bootcamp/Portfolio/assets/images/Portfolio4.png);
+    border-bottom: 5px solid var(--highlight);
+    }   
+
+    .project5 {
+    background-image: url(/Users/Lois/Documents/coding_bootcamp/Portfolio/assets/images/Portfolio5.png);
+    border-bottom: 5px solid var(--highlight);
+    }
+
+    .project5:hover {
+    box-shadow: inset 0px 0px 20px var(--highlight);
+    }
+
+ /* consolidated code for the hovering effect */
+
+    .project1:hover,  .project2:hover, .project3:hover, .project4:hover, .project5:hover {
+    box-shadow: inset 0px 0px 20px var(--highlight);
+    }
+    
+    .text {
+    background: var(--background);
+    width: 100%;
+    padding: 20px 40px;
+    color: var(--light);
+    }
+
+    .text p {
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .text h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    /* Contact me section, again following styling and is interactive upon hover and has working links */
+
+    .contact-title {
+    color: var(--light);
+    position: relative;
+    right: 400px;
+    }
+
+    .Contact-Me {
+    padding: 10px;
+    background-color: var(--background);;
+    border-bottom: 5px solid var(--highlight);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    }
+
+    .contact-text:hover {
+    color: var(--highlight);
+    }
+
+
+@media screen and (min-width: 768px) {
+    /* media query for smaller screens. This currently isn't performing as I would like, but I was aiming for the column to not grow and be 50% of the width of the screen. */
+    .column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+  }
+  
+  /* media query for larger screens. Again, this currently isn't performing how I would like, I will try to revise and amend this as my skills progress. */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+
